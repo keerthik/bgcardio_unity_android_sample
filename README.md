@@ -10,8 +10,15 @@
 ## Android Studio Project
 The Android studio project is a modified output of Unity's `Export as Android Studio Project`  build option. Rerunning the build option from Unity will overwrite the classes here to include changes to the scene, gameObjects, and scripts.
 
+### Noteworthy changes from the default Unity Android Studio Project export
+- The `build.gradle` file is modified to include the BitGym Cardio SDK
+- The `AndroidManifest.xml` file is modified (and placed into Assets/Plugins/Android of the Unity project) to include camera permissions
+- The packagename is set to the project's package name rather than `com.unity3d.unityplayer`
+- The java src file is updated to extend the `BGCUnityActivity` class to handle BitGym SDK listeners
+- 
+
 ### Building the APK
-> NOTE: Substitute $\*$ with the appropriate value
+> NOTE: Substitute $\*$ with the appropriate value, if you follow these instructions for a different project
 
 You can load the project up into [Android Studio](https://developer.android.com/studio/) and buils it using the Build > Build APK(s) menu action within AS.
 
