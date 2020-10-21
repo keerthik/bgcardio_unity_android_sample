@@ -15,7 +15,6 @@ The Android studio project is a modified output of Unity's `Export as Android St
 - The `AndroidManifest.xml` file is modified (and placed into Assets/Plugins/Android of the Unity project) to include camera permissions
 - The packagename is set to the project's package name rather than `com.unity3d.unityplayer`
 - The java src file is updated to extend the `BGCUnityActivity` class to handle BitGym SDK listeners
-- 
 
 ### Building the APK
 > NOTE: Substitute $\*$ with the appropriate value, if you follow these instructions for a different project
